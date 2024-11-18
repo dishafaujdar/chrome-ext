@@ -33,7 +33,6 @@ dist-ssr/
 package-lock.json
 pnpm-lock.yaml
 
-index.html
 postcss.config.js
 tailwind.config.js
 
