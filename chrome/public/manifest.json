@@ -3,17 +3,16 @@
   "name": "YouTube Video Filter",
   "version": "1.0",
   "description": "Filters YouTube videos based on category, duration, and date.",
-  "icons": {"32": "icon.png"},
 
   "background": {"service_worker": "background.js"},
 
-  "permissions": ["sidePanel","tabs","storage","activeTab"],
-
-  "action": {"default_title": "Be choosy about your feed",
-             "default_html": "index.html"},
-
-  "side_panel": {"default_path": "index.html"},
-
+  
+  "action": {
+    "default_title": "Be choosy about your feed",
+    "default_popup": "index.html",
+    "icons": {"32": "icon.png"}
+  },
+  
   "content_scripts": [
     {
       "js": ["scripts/contentScript.js"],
@@ -21,5 +20,7 @@
       "matches": ["https://www.youtube.com/*"]
     }
   ],
+  "permissions": ["tabs","storage","activeTab","scripting"],
+
   "host_permissions": ["https://www.youtube.com/*"]
 }
