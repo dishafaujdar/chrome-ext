@@ -40,5 +40,4 @@ eslint.config.js
 
 .tsconfig.app.json
 .tsconfig.node.json
-tsconfig.json
 vite.config.ts
