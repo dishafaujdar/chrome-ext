@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Filters YouTube videos based on category, duration, and date.",
 
-  "background": {"service_worker": "service_worker.js"},
+  "background": {"service-worker": "service-worker.js"},
   
   "action": {
     "default_title": "Be choosy about your feed",

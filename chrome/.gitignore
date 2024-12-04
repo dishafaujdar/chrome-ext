@@ -38,6 +38,4 @@ tailwind.config.js
 
 eslint.config.js
 
-.tsconfig.app.json
-.tsconfig.node.json
 vite.config.ts
